@@ -36,3 +36,349 @@
     transform: rotate(360deg);
   }
 }
+.container {
+  min-height: 100%;
+  min-width: 100%;
+  background-size: cover;
+  background-color: black;
+  overflow: hidden;
+  padding-bottom: 5%;
+}
+.Navbar {
+  background-color: black;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0px;
+}
+.NavLogo {
+  height: 60px;
+  width: full;
+}
+.NavItemContainer {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+  text-decoration: none;
+}
+.NavItemContainer li {
+  list-style-type: none;
+  font-size: 23px;
+  font-family: sans-serif;
+  padding-left: 23px;
+  color: darkmagenta;
+}
+
+.ImageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.AboutImage {
+  height: 570px;
+  width: 95%;
+  border-style: solid;
+  border-color: darkmagenta;
+  border-width: 2px;
+  border-radius: 15px;
+}
+.Heading {
+  position: absolute;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 55px;
+}
+.description {
+  position: absolute;
+  text-align: center;
+  font-size: 25px;
+  padding-top: 120px;
+}
+
+.ContentContainer {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1em;
+  margin-top: 2%;
+  justify-content: center;
+}
+.box1 {
+  height: 35em;
+  width: 17em;
+  padding: 0.3em;
+  border-color: white;
+  border-radius: 0.3em;
+  border-style: solid;
+  border-width: 2px;
+  color: white;
+}
+.Tagline {
+  font-size: 1.6em;
+  color: white;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+  font-weight: 700;
+}
+.descriptioncontent {
+  font-size: 1.2em;
+  color: white;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+  padding-bottom: 4%;
+  text-align: left;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin: 2em;
+}
+.footerContainer {
+  border-style: solid;
+  border-color: white;
+  border-width: 0.1em;
+  border-radius: 1em;
+  height: fit-content;
+  width: 74em;
+  background-color: transparent;
+}
+.Searchdb {
+  text-align: center;
+  color: white;
+  font-size: 1.7em;
+}
+.buttonsContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2em;
+  margin-bottom: 2em;
+  justify-content: center;
+}
+.viewbutton {
+  width: 25em;
+  height: 3em;
+  background-color: rgb(205, 29, 193);
+  border-radius: 0.6em;
+  color: white;
+  margin-right: 0.5em;
+  border-color: none;
+  border-width: 0px;
+  cursor: pointer;
+}
+
+.button {
+  height: 3em;
+  width: 15em;
+  background-color: rgb(204, 45, 193);
+  border-radius: 1.5em;
+  color: white;
+  border-style: none;
+  border-color: none;
+  margin-left: 0.5em;
+  cursor: pointer;
+}
+.BooksContainer {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.7em;
+  padding: 0 20px;
+}
+.BookPageHeading {
+  text-align: center;
+  color: white;
+  font-size: 35px;
+  font-weight: 500;
+  justify-self: flex-start;
+}
+.BookCards {
+  height: fit-content;
+  border-radius: 0.3em;
+  width: 21rem;
+  border-color: white;
+  border-style: solid;
+  border-width: 2px;
+  color: white;
+  padding: 10px 10px;
+}
+.BookTitle {
+  font-size: 22px;
+  padding-left: 0.3em;
+}
+.Bookdescription {
+  font: 15px;
+  padding-left: 0.3em;
+}
+.container2 {
+  background-color: black;
+  padding-bottom: 6%;
+}
+.BookImage {
+  height: 19em;
+  width: 13em;
+}
+.imageContainerBook {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.CharacterContainer {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.7em;
+  padding: 0 20px;
+}
+.CharCard {
+  height: 24em;
+  width: 18em;
+  border-style: solid;
+  border-color: white;
+  border-radius: 0.3em;
+  color: white;
+  border-width: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+}
+.charImage {
+  width: 14em;
+  height: 20em;
+}
+.MoviesContainer {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.7em;
+  padding: 0 20px;
+}
+.MovieCards {
+  height: 33rem;
+  border-radius: 0.3em;
+  width: 21rem;
+  border-color: white;
+  border-style: solid;
+  border-width: 2px;
+  color: white;
+  padding: 10px 10px;
+}
+.MovieImage {
+  width: 15em;
+  height: 19em;
+}
+.PotionContainer {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.7em;
+  padding: 0 20px;
+}
+.potionCards {
+  height: 33rem;
+  border-radius: 0.3em;
+  width: 21rem;
+  border-color: white;
+  border-style: solid;
+  border-width: 2px;
+  color: white;
+  padding: 10px 10px;
+}
+.SpellContainer {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.7em;
+  padding: 0 20px;
+}
+.SpellCards {
+  height: 33rem;
+  border-radius: 0.3em;
+  width: 21rem;
+  border-color: white;
+  border-style: solid;
+  border-width: 2px;
+  color: white;
+  padding: 10px 10px;
+}
+.descriptionContainer {
+  background-size: cover;
+  background-color: black;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+}
+.bookdescBox {
+  height: fit-content;
+  width: 75%;
+  border-style: solid;
+  border-width: 0.1em;
+  border-color: white;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-top: 10em;
+  margin-bottom: 10em;
+  border-radius: 0.5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.BookLogo {
+  height: 40em;
+  width: 23em;
+}
+.BookDescription {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.BookDescription td {
+  padding: 10px; /* Adjust padding for spacing */
+  border: 1px solid #dddddd;
+  text-align: left;
+}
+
+.BookTitle {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+.TitleNameSpan {
+  font-size: 20px;
+  color: white;
+}
+.characterDescription {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.characterDescription tr {
+  display: flex;
+  justify-content: center;
+  padding-top: 2%;
+}
+
+.characterDescription td {
+  text-align: left;
+  padding-left: 3%;
+  padding-right: 1%;
+}

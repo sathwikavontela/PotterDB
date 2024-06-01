@@ -1,25 +1,67 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import Books from './components/Books'
+import Characters from './components/Characters'
+import HomePage from './components/HomePage'
+import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom'
+import Movies from './components/Movies'
+import Potions from './components/Potions'
+import Spells from './components/Spells'
+import BookDescription from './components/BookDescription'
+import CharCardDescription from './components/CharCardDescription'
 
+const Applayout = () => {
+  return (
+    <div>
+      <Outlet />
+    </div>
+  )
+}
+const appRouter = createBrowserRouter([
+  {
+    path: '/',
+    element: <Applayout />,
+    children: [
+      {
+        path: '/',
+        element: <HomePage />,
+      },
+      {
+        path: '/books/',
+        element: <Books />,
+      },
+      {
+        path: '/characters/',
+        element: <Characters />,
+      },
+      {
+        path: '/movies/',
+        element: <Movies />,
+      },
+      {
+        path: '/potions',
+        element: <Potions />,
+      },
+      {
+        path: '/spells/',
+        element: <Spells />,
+      },
+      {
+        path: '/books/:bookId',
+        element: <BookDescription />,
+      },
+      {
+        path: '/characters/:charId',
+        element: <CharCardDescription />,
+      },
+    ],
+  },
+])
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <RouterProvider router={appRouter} />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
